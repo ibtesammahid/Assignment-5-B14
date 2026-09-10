@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/react.svg",
+    "category": "Frontend",
+    "description": "A JavaScript library for building user interfaces and interactive web applications.",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "popularity": 95
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/vuedotjs.svg",
+    "category": "Frontend",
+    "description": "A progressive JavaScript framework for building user interfaces and single-page applications.",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "popularity": 88
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/svelte.svg",
+    "category": "Frontend",
+    "description": "A modern frontend framework that shifts much of the work from the browser to the build step.",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "popularity": 78
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/nextdotjs.svg",
+    "category": "Full Stack",
+    "description": "A React framework for building fast, scalable, and production-ready web applications.",
+    "rating": 4.9,
+    "difficulty": "Advanced",
+    "popularity": 94
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/nodedotjs.svg",
+    "category": "Backend",
+    "description": "A JavaScript runtime that allows developers to build server-side and backend applications.",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "popularity": 93
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/postgresql.svg",
+    "category": "Database",
+    "description": "A powerful open-source relational database system known for reliability and advanced features.",
+    "rating": 4.9,
+    "difficulty": "Advanced",
+    "popularity": 90
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/redis.svg",
+    "category": "Database",
+    "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time applications.",
+    "rating": 4.7,
+    "difficulty": "Advanced",
+    "popularity": 84
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/javascript.svg",
+    "category": "Programming Language",
+    "description": "A versatile programming language used to create interactive and dynamic web applications.",
+    "rating": 4.9,
+    "difficulty": "Beginner",
+    "popularity": 99
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/typescript.svg",
+    "category": "Programming Language",
+    "description": "A strongly typed programming language built on JavaScript that helps developers write safer and more maintainable code.",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "popularity": 96
+  }
+]
