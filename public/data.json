@@ -118,14 +118,14 @@
     "rating": 4.9,
     "difficulty": "Beginner",
     "badge": "Modern",
-    "badgeColor": "#0284C7"             
+    "badgeColor": "#0891B2"             
   },
     {
     "id": 12,
     "name": "Docker",
     "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     "category": "DevOps",
-    "description": "A platform designed to build, share, and run containerized applications reliably.                  ",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Containers",
