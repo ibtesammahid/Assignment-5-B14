@@ -6,5 +6,6 @@ export interface technologyType {
   description: string;
   rating: number;
   difficulty: string;
-  popularity: number;
+  badge: string;
+  badgeColor: string;
 }

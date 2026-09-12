@@ -9,6 +9,19 @@ interface TechnologyCardProps {
   setStackedTech: Dispatch<SetStateAction<technologyType[]>>;
 }
 
+
+const badgeStyle = {
+  Popular: "bg-[#eaf2fd] text-[#1E1E1E]",
+  Versatile: "bg-[#eaf2fd] text-[#1E1E1E]",
+  Fast: "bg-[#eaf2fd] text-[#1E1E1E]",
+  "SEO-Friendly": "bg-[#AB1212] text-[#1E1E1E]",
+  Standard: "bg-[#eaf2fd] text-[#1E1E1E]",
+  "Top SQL": "bg-[#AB1212] text-[#1E1E1E]",
+  Caching: "bg-[#eaf2fd] text-[#1E1E1E]",
+  Ubiquitous: "bg-[#eaf2fd] text-[#1E1E1E]",
+  Essential: "bg-[#eaf2fd] text-[#1E1E1E]"
+}
+
 const TechnologyCard = ({
   technology,
   stackedTech,
@@ -31,8 +44,8 @@ const TechnologyCard = ({
             alt="logo"
           />
               <div className="absolute right-3 top-3">
-      <span className="rounded-full bg-base-100/90 px-3 py-1 text-xs font-semibold shadow backdrop-blur">
-        {technology.category}
+      <span className="rounded-full bg-base-100/90 px-3 py-1 text-xs font-semibold shadow backdrop-blur" style={{backgroundColor: `${technology.badgeColor}20`, color: `${technology.badgeColor}`}}>
+        {technology.badge}
       </span>
     </div>
 
@@ -60,7 +73,7 @@ const TechnologyCard = ({
           <div className="card-actions justify-center ">
             <button
               onClick={handleAddToStack}
-              className="bg-[#1E1E1E] text-white p-2 mt-2 w-200 rounded-[10px] transition-all hover:scale-105 cursor-pointer disabled:bg-gray-300 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:opacity-70"
+              className="bg-[#0A0F1D] text-white p-2 mt-2 w-200 rounded-[10px] transition-all hover:scale-105 cursor-pointer disabled:bg-gray-300 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:opacity-70"
               disabled={isStacked}
             >
               {isStacked ? "✓Added to Stack" : "Add To Stack"}
