@@ -130,5 +130,38 @@
     "difficulty": "Intermediate",
     "badge": "Containers",
     "badgeColor": "#0284C7"             
+  },
+  {
+  "id": 13,
+  "name": "Express.js",
+  "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  "category": "Backend",
+  "description": "A lightweight and flexible Node.js framework for building web servers and REST APIs.",
+  "rating": 4.8,
+  "difficulty": "Intermediate",
+  "badgeColor": "#000000",
+  "badge": "Routing"
+},
+ {
+    "id": 14,
+    "name": "Angular",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+    "category": "Frontend",
+    "description": "A powerful TypeScript-based framework for building scalable web applications.",
+    "rating": 4.7,
+    "difficulty": "Advanced",
+    "badgeColor": "#DD0031",
+    "badge": "Framework"
+  },
+  {
+    "id": 15,
+    "name": "MongoDB",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    "category": "Database",
+    "description": "A popular NoSQL database that stores data in flexible JSON-like documents.",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badgeColor": "#47A248",
+    "badge": "No SQL"
   }
 ]

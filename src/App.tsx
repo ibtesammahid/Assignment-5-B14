@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Technology from "./Components/Technology/Technology";
 import type { technologyType } from "./Types/technologytype";
 import StackCard from "./Components/Technology/StackCard";
+import Footer from "./Footer";
 
 const technologyFetch = async (): Promise<technologyType[]> => {
   const res = await fetch("/data.json");
@@ -40,6 +41,7 @@ function App() {
           <StackCard stackedTech={stackedTech} setStackedTech={setStackedTech} />
         </Suspense>
       </div>
+      <Footer />
     </>
   );
 }

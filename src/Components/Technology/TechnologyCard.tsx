@@ -32,8 +32,8 @@ const TechnologyCard = ({
   };
 
   return (
-    <div>
-      <div className=" card bg-base-100  h-75 shadow-sm hover:shadow-lg transition-all hover:scale-101 ">
+    <div className="pb-20" >
+      <div className= {`card bg-base-100  h-75 shadow-[0_10px_10px_rgba(0,0,0,0.1)] ${isStacked ? "border-green-500 border "  : "border-gray-200 border hover:shadow-lg transition-all hover:scale-101 "}`}>
         <figure>
           <img
             className="h-10 mt-3 object-contain"

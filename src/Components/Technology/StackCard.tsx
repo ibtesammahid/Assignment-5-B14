@@ -50,14 +50,14 @@ const StackCard = ({ stackedTech , setStackedTech }: StackCardProps) => {
 
   return (
     <div>
-      <div className=" w-70 h-auto bg-base-100 shadow-sm">
+      <div className=" w-70 h-auto bg-base-100 shadow-[0_10px_10px_rgba(0,0,0,0.1)] rounded-[10px] p-3">
         <div className="card-body">
-          <h2 className="card-title">Your Stack</h2>
+          <h2 className="text-lg font-bold italic">Your Stack</h2>
 
-          <p>{stackedTech.length ===0 ? "No Technology Selected Yet"  : `${stackedTech.length} Technology Selected` }</p>
+          <p className="text-gray-500">{stackedTech.length ===0 ? "No Technology Selected Yet"  : `${stackedTech.length} Technology Selected` }</p>
           
           {(stackedTech.length === 0) && (
-            <p className="text-[#64748B] text-center border border-gray-200 my-3 p-3 rounded-[5px]">Stack is empty</p>
+            <p className="text-gray-400 text-center border border-gray-200 my-3 p-3 rounded-[5px]">Stack is empty</p>
           )}
 
           <div >
