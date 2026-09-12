@@ -13,7 +13,8 @@ const technologyFetch = async (): Promise<technologyType[]> => {
 };
 
 function App() {
-  const technologyPromise = technologyFetch();
+  // const technologyPromise = technologyFetch();
+  const [technologyPromise] = useState(() => technologyFetch());
       const [stackedTech, setStackedTech] = useState<technologyType[]>([])
   
 

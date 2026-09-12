@@ -22,7 +22,11 @@ const StackCard = ({ stackedTech , setStackedTech }: StackCardProps) => {
           <h2 className="card-title">Your Stack</h2>
 
           <p>{stackedTech.length ===0 ? "No Technology Selected Yet"  : `${stackedTech.length} Technology Selected` }</p>
-          <p className="text-[#64748B] text-center border border-gray-200 my-3 p-3 rounded-[5px]">{stackedTech.length ===0 ? "Stack is empty" : ""}</p>
+          
+          {(stackedTech.length === 0) && (
+            <p className="text-[#64748B] text-center border border-gray-200 my-3 p-3 rounded-[5px]">Stack is empty</p>
+          )}
+          
 
           
        

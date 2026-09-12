@@ -4,30 +4,38 @@ import { GiRoundStar } from "react-icons/gi";
 import StackCard from "./StackCard";
 
 interface TechnologyCardProps {
-  technology: technologyType
+  technology: technologyType;
   stackedTech: technologyType[];
   setStackedTech: Dispatch<SetStateAction<technologyType[]>>;
 }
 
-
-
-const TechnologyCard = ({ technology,stackedTech, setStackedTech}: TechnologyCardProps ) => {
+const TechnologyCard = ({
+  technology,
+  stackedTech,
+  setStackedTech,
+}: TechnologyCardProps) => {
   const [isStacked, setIsStacked] = useState(false);
   console.log();
-  const handleAddToStack = ()=> {
-  setStackedTech([...stackedTech, technology]);
-  setIsStacked(true)
-}
+  const handleAddToStack = () => {
+    setStackedTech([...stackedTech, technology]);
+    setIsStacked(true);
+  };
 
   return (
     <div>
-      <div className="card bg-base-100 w- h-75 shadow-sm">
+      <div className=" card bg-base-100  h-75 shadow-sm hover:shadow-lg transition-all hover:scale-101 ">
         <figure>
           <img
             className="h-10 mt-3 object-contain"
             src={technology.logo}
             alt="logo"
           />
+              <div className="absolute right-3 top-3">
+      <span className="rounded-full bg-base-100/90 px-3 py-1 text-xs font-semibold shadow backdrop-blur">
+        {technology.category}
+      </span>
+    </div>
+
         </figure>
         <div className="card-body">
           <h2 className="card-title font-bold -mt-2">{technology.name}</h2>
@@ -52,17 +60,14 @@ const TechnologyCard = ({ technology,stackedTech, setStackedTech}: TechnologyCar
           <div className="card-actions justify-center ">
             <button
               onClick={handleAddToStack}
-              className="bg-[#1E1E1E] text-white p-2 mt-2 w-200 rounded-[10px] transition-all hover:scale-105 cursor-pointer"
-              disabled={isStacked ? true:false}
-              
+              className="bg-[#1E1E1E] text-white p-2 mt-2 w-200 rounded-[10px] transition-all hover:scale-105 cursor-pointer disabled:bg-gray-300 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:opacity-70"
+              disabled={isStacked}
             >
-              {isStacked === true ? "Stacked" : "Add To Stack"}
+              {isStacked ? "✓Added to Stack" : "Add To Stack"}
             </button>
           </div>
         </div>
       </div>
-
-      {/* <StackCard stackedTech={stackedTech} /> */}
     </div>
   );
 };
