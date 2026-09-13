@@ -1,4 +1,4 @@
-import React, { useState, type Dispatch, type SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import type { technologyType } from "../../Types/technologytype";
 import { GiRoundStar } from "react-icons/gi";
 import { toast } from "react-toastify";
@@ -15,7 +15,7 @@ const TechnologyCard = ({
   setStackedTech,
 }: TechnologyCardProps) => {
   const [isStacked, setIsStacked] = useState(false);
-  console.log();
+
   const handleAddToStack = () => {
     setStackedTech([...stackedTech, technology]);
     setIsStacked(true);

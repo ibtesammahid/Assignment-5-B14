@@ -4,7 +4,8 @@ import Navbar from "./Components/Navbar";
 import Technology from "./Components/Technology/Technology";
 import type { technologyType } from "./Types/technologytype";
 import StackCard from "./Components/Technology/StackCard";
-import Footer from "./Footer";
+import Footer from "./Components/Footer";
+
 
 const technologyFetch = async (): Promise<technologyType[]> => {
   const res = await fetch("/data.json");
@@ -13,10 +14,8 @@ const technologyFetch = async (): Promise<technologyType[]> => {
 };
 
 function App() {
-  // const technologyPromise = technologyFetch();
   const [technologyPromise] = useState(() => technologyFetch());
-      const [stackedTech, setStackedTech] = useState<technologyType[]>([])
-  
+  const [stackedTech, setStackedTech] = useState<technologyType[]>([]);
 
   return (
     <>
@@ -36,8 +35,15 @@ function App() {
 
       <div className="sm:flex sm:justify-between sm:gap-5 sm:mx-22 sm:my-10  grid grid-cols-1 justify-items-center gap-5 mx-10 my-10">
         <Suspense fallback={<p>Loding...</p>}>
-          <Technology technologyPromise={technologyPromise} stackedTech={stackedTech} setStackedTech={setStackedTech}   />
-          <StackCard stackedTech={stackedTech} setStackedTech={setStackedTech} />
+          <Technology
+            technologyPromise={technologyPromise}
+            stackedTech={stackedTech}
+            setStackedTech={setStackedTech}
+          />
+          <StackCard
+            stackedTech={stackedTech}
+            setStackedTech={setStackedTech}
+          />
         </Suspense>
       </div>
       <Footer />

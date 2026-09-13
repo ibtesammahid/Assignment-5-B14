@@ -1,5 +1,4 @@
-import React from "react";
-import logo from "./assets/logo-text.png";
+import logo from '../assets/logo-text.png'
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
               modern software.
             </p>
 
-            <div >
+            <div>
               <ul className="flex gap-5 mt-5 text-[14px] font-semibold">
                 <li>Github</li>
                 <li>LinkedIn</li>
@@ -52,10 +51,9 @@ const Footer = () => {
           </div>
         </div>
 
-         <div className="divider"></div>
+        <div className="divider"></div>
 
         <div className="flex justify-between items-center w-auto">
-            
           <p className="text-gray-400 text-[14px]">
             &copy; 2023 Your Company. All rights reserved.
           </p>
