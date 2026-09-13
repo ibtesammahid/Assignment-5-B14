@@ -49,8 +49,8 @@ const StackCard = ({ stackedTech , setStackedTech }: StackCardProps) => {
         };
 
   return (
-    <div>
-      <div className=" w-70 h-auto bg-base-100 shadow-[0_10px_10px_rgba(0,0,0,0.1)] rounded-[10px] p-3">
+    <div >
+      <div className=" sm:w-70 w-140 h-auto bg-base-100 shadow-[0_10px_10px_rgba(0,0,0,0.1)] rounded-[10px] p-3">
         <div className="card-body">
           <h2 className="text-lg font-bold italic">Your Stack</h2>
 

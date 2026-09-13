@@ -12,7 +12,7 @@ interface ShowcaseTechProps {
 const ShowcaseTech = ({ technologies, stackedTech, setStackedTech} : ShowcaseTechProps ) => {
   console.log(technologies, "from showcase");
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="sm:grid sm:grid-cols-3 sm:gap-5 grid grid-cols-1 gap-5">
       {technologies.map((technology: technologyType) => {
         return (
           <div key={technology.id} >

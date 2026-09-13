@@ -1,4 +1,3 @@
-// import Hero from "./Components/hero"
 import { Suspense, useState } from "react";
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
@@ -24,18 +23,18 @@ function App() {
       <Navbar />
       <Banner />
 
-      <h2 className="font-bold text-4xl ml-22 mt-25 ">
+      <h2 className="font-bold text-4xl sm:ml-22 mt-25 sm:text-left text-center ">
         Explore the{" "}
         <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
           Technologies
         </span>
       </h2>
 
-      <p className="text-[#64748B] ml-22 mt-3">
+      <p className="text-[#64748B] sm:ml-22 mt-3 sm:text-left text-center">
         Pick one technology per category to build your ideal stack
       </p>
 
-      <div className="flex justify-between gap-5 mx-22 my-10">
+      <div className="sm:flex sm:justify-between sm:gap-5 sm:mx-22 sm:my-10  grid grid-cols-1 justify-items-center gap-5 mx-10 my-10">
         <Suspense fallback={<p>Loding...</p>}>
           <Technology technologyPromise={technologyPromise} stackedTech={stackedTech} setStackedTech={setStackedTech}   />
           <StackCard stackedTech={stackedTech} setStackedTech={setStackedTech} />
