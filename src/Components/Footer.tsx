@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="flex justify-between items-center w-auto">
           <p className="text-gray-400 text-[14px]">
-            &copy; 2023 Your Company. All rights reserved.
+            &copy; 2026 DevStack. All rights reserved.
           </p>
           <ul className="flex gap-5 *:text-gray-400 text-[14px]">
             <li>Privacy</li>

@@ -1,4 +1,4 @@
-import React, { use, type Dispatch, type SetStateAction } from 'react';
+import { use, type Dispatch, type SetStateAction } from 'react';
 import type { technologyType } from '../../Types/technologytype';
 import ShowcaseTech from './ShowcaseTech';
 
